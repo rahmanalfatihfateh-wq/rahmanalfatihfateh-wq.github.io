@@ -1,30 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>FF Kentang Tapi Booyah</title>
+</head>
+<body>
 
-function cekSetting() {
-  var ram = document.getElementById("ram").value;
-  var hasil = document.getElementById("hasil");
+  <h1>FF Kentang Tapi Booyah</h1>
 
-  if (ram == "1") {
-    hasil.innerHTML =
-      "🔴 RAM 1 GB<br>" +
-      "Grafik: Smooth<br>" +
-      "High FPS: OFF<br>" +
-      "Shadow: OFF<br>" +
-      "Resolusi: Rendah";
-  } 
-  else if (ram == "2") {
-    hasil.innerHTML =
-      "🟡 RAM 2 GB<br>" +
-      "Grafik: Standard<br>" +
-      "High FPS: ON<br>" +
-      "Shadow: OFF<br>" +
-      "Resolusi: Sedang";
-  } 
-  else {
-    hasil.innerHTML =
-      "🟢 RAM 3 GB+<br>" +
-      "Grafik: Smooth / Standard<br>" +
-      "High FPS: ON<br>" +
-      "Shadow: ON<br>" +
-      "Resolusi: Tinggi";
-  }
-}
+  <select id="ram">
+    <option value="1">1 GB</option>
+    <option value="2">2 GB</option>
+    <option value="3">3 GB+</option>
+  </select>
+
+  <br><br>
+
+  <button onclick="cekSetting()">Cek Pengaturan</button>
+
+  <br><br>
+
+  <div id="hasil"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
