@@ -3,25 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>FF Kentang Tapi Booyah</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    select, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    button {
+      background: orange;
+      border: none;
+      cursor: pointer;
+    }
+    #hasil {
+      margin-top: 20px;
+      background: #222;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>FF Kentang Tapi Booyah</h1>
+<h1>🔥 FF Kentang Tapi Booyah 🔥</h1>
 
-  <select id="ram">
-    <option value="1">1 GB</option>
-    <option value="2">2 GB</option>
-    <option value="3">3 GB+</option>
-  </select>
+<select id="ram">
+  <option value="1">1 GB</option>
+  <option value="2">2 GB</option>
+  <option value="3">3 GB+</option>
+</select>
 
-  <br><br>
+<br>
 
-  <button onclick="cekSetting()">Cek Pengaturan</button>
+<button onclick="cekSetting()">Cek Pengaturan</button>
 
-  <br><br>
+<div id="hasil"></div>
 
-  <div id="hasil"></div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
